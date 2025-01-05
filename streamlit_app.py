@@ -1,47 +1,4 @@
 
-
-
-# # Main function
-# def main():
-#     st.title("SocialSage")
-
-#     # Initialize session state for chat history
-#     if "messages" not in st.session_state:
-#         st.session_state["messages"] = []
-
-#     # Input field for the user
-#     message = st.text_area("", placeholder="How can we assist you today?")
-
-#     # Button to send the query
-#     if st.button("Generate Insights"):
-#         if not message.strip():
-#             st.error("Please enter a message")
-#             return
-
-#         try:
-#             with st.spinner("Running flow..."):
-#                 response = run_flow(message)
-#                 response_text = response.get('outputs', [])[0].get('outputs', [])[0].get('results', {}).get('message', {}).get('text', 'Sorry, I did not understand that.')
-#                 print("response from :",response_text)
-
-#             # Append user message and response to chat history
-#             st.session_state["messages"].append({"user": message, "bot": response_text})
-
-#         except Exception as e:
-#             st.error(str(e))
-
-#     # Display chat history
-#     st.subheader("Chat History")
-#     for chat in st.session_state["messages"]:
-#         st.markdown(f"**You:** {chat['user']}")
-#         st.markdown(f"**Bot:** {chat['bot']}")
-#         st.divider()  # Adds a divider for better readability
-
-# if __name__ == "__main__":
-#     main()
-
-
-
 import streamlit as st
 import requests
 import json
