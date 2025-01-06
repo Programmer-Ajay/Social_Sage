@@ -67,13 +67,18 @@ navbar_css = """
 
 /* Media Query for Navbar Title Font Size on Small Screens */
 
-@media (max-width: 795px) {
+@media (max-width: 576px) {
     .navbar h1 {
-        font-size: 35px; /* Reduce font size for smaller screens */
+        font-size: 25px; /* Reduce font size for smaller screens */
     }
 }
 
+@media (min-width: 576px) and (max-width: 894px) {
+    .navbar h1 {
+        font-size: 45px; /* Reduce font size for smaller screens */
+    }
 }
+
 </style>
 """
 # All functions are start from here
