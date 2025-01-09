@@ -1,4 +1,4 @@
-# SOCIALSAGE An Social Media Assistant Expert
+# SocialSage An Social Media Analyzer
 
 The SocialSage  is a powerful tool designed to help users gain valuable insights from their social media data. This bot processes the provided data and generates meaningful metrics, including averages and other key performance indicators, to aid in decision-making and strategy development.
  
@@ -31,7 +31,6 @@ The SocialSage  is a powerful tool designed to help users gain valuable insights
    ```
    $ streamlit run streamlit_app.py
    ```
-
 
 
 
